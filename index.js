@@ -59,10 +59,9 @@ app.post("/products",(req,res) => {
     var land=req.body.land
     var thema0=req.body.thema0
     var thema1=req.body.thema1
+    var thema2=req.body.thema2
     var hauptperson0=req.body.hauptperson0
     var hauptperson1=req.body.hauptperson1
-    var thema2=req.body.thema2
-
     var zeit=req.body.zeit
     var amalin=req.body.amalin
 
@@ -80,7 +79,6 @@ app.post("/products",(req,res) => {
         "verdat":verdat,
         "enddat":enddat,
         "leseversuche":leseversuche,
-
         "autor":autor,
         "keyword":keyword,
         "kwp":kwp,
@@ -115,5 +113,4 @@ db.collection('products').insertOne(data,(err,collection) => {
         console.log("Record Inserted Succesfully")
     })
 }
-
 )

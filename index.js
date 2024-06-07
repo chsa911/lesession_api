@@ -44,6 +44,9 @@ app.post("/products",(req,res) => {
     var eindat= req.body.eindat
     var entdat=req.body.entdat
     var verdat=req.body.verdat
+    var enddat=req.body.enddat
+    var leseversuche=req.body.leseversuche
+
     var autor=req.body.autor
     var keyword=req.body.keyword
     var kwp=req.body.kwp
@@ -56,7 +59,10 @@ app.post("/products",(req,res) => {
     var land=req.body.land
     var thema0=req.body.thema0
     var thema1=req.body.thema1
+    var hauptperson0=req.body.hauptperson0
+    var hauptperson1=req.body.hauptperson1
     var thema2=req.body.thema2
+
     var zeit=req.body.zeit
     var amalin=req.body.amalin
 
@@ -72,6 +78,9 @@ app.post("/products",(req,res) => {
         "eindat":eindat,
         "entdat":entdat,
         "verdat":verdat,
+        "enddat":enddat,
+        "leseversuche":leseversuche,
+
         "autor":autor,
         "keyword":keyword,
         "kwp":kwp,
@@ -85,6 +94,8 @@ app.post("/products",(req,res) => {
         "thema0":thema0,
         "thema1":thema1,
         "thema2":thema2,
+        "hauptperson0":hauptperson0,
+        "hauptperson1":hauptperson1,
         "zeit":zeit,
         "amalin":amalin,
 

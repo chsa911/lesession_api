@@ -22,14 +22,18 @@
                 <input type="text" class="box"
                        id="entdat" name="entdat" placeholder="Entdeckungsdatum"/>
                 <input type="text" class="box"
-                       id="verdat" name="verdat" placeholder="Veröffentlichungsdatum" />
+                       id="verdat" name="verdat" placeholder="Veröffentlichungsdatum"/>
                 <input type="text" class="box"
                        id="enddat" name="enddat" placeholder="Beendigungsdatum"/>
-                <br>
-                <!--Autocomplete mit Abkürzungserklärung-->
+                <input type="text" class="box"
+                       id="leseversuche" name="leseversuche" placeholder="Leseversuche"/>
+
+                                <br>
+                                <!--Autocomplete mit Abkürzungserklärung-->
                 <h1>Basisdaten</h1>
-                <input type="text" class="box" id="author"
-                       id="autor" placeholder="Autor" required/>
+</p>
+                <input type="text" class="box"
+                       id="autor" name="autor" placeholder="Autor" required/>
 
                 <input type="text" class="box"
                        id="keyword" name="keyword" placeholder="Keyword" required/>
@@ -57,14 +61,24 @@
 
                     <br>
                     <input type="text" class="box"
-                           id="thema" name="thema" placeholder="Thema"/>
+                           id="thema0" name="thema0" placeholder="Thema"/>
+
                     <input type="text" class="box"
-                           id="thema1" name="thema1" placeholder="Thema1"/>
+                           id="thema1" name="thema1" placeholder="Thema2"/>
+
                     <input type="text" class="box"
-                           id="thema2" name="thema2" placeholder="Thema2"/>
+                           id="thema2" name="thema2" placeholder="Thema3"/>
+
+                    <input type="text" class="box"
+                           id="hauptperson0" name="hauptperson0" placeholder="Hauptperson"/>
+
+                    <input type="text" class="box"
+                           id="hauptperson1" name="hauptperson1" placeholder="Hauptperson2"/>
+
                     <!--Dropdown Phasen-->
                     <input type="text" class="box"
                            id="zeit" name="zeit" placeholder="Zeit"/>
+
                     <!--Amazon Link-->
                     <input type="text" class="box"
                            id="amalin" name="amalin" placeholder="Amazon Link"/>
@@ -80,6 +94,7 @@
                 Validierung wenn Kombination schon vorhanden und Alternativvorschlag-->
                 <input type="text" class="box"
                        id="mark" name="mark" placeholder="Markierung"/>
+
                 <!-- Beste Markierung nur mit 1 Strich bzw aufsteigend mehrere bzw. nur ein Bereich.-->
                 <input type="text" class="box"
                        id="markrang" name="markrang" placeholder="Rang der Markierung"/>

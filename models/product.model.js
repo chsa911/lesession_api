@@ -10,7 +10,7 @@ const ProductSchema = mongoose.Schema(
 
      autor: {
       type: String,
-      required: true,
+      required: false,
 
     },
 
@@ -57,7 +57,12 @@ const ProductSchema = mongoose.Schema(
         type: Date,
         required: false,
       },
+// Wie oft wurde das Buch gelesen 0= erstes mal 1= 2. mal
 
+      leseversuche: {
+        type: Number,
+        required: false,
+      },
     //Teil: Content
 
        //Genre
@@ -96,6 +101,14 @@ const ProductSchema = mongoose.Schema(
                                                type: String,
                                                required: false,
                                              },
+         hauptperson0: {
+                            type: String,
+                            required: false,
+                                          },
+           hauptperson1: {
+                                                  type: String,
+                                                  required: false,
+                                                },
    zeit: {
                                                type: String,
                                                required: false,

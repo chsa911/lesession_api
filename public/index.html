@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--suppress BuyFluidPluginNoteInspection -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form </title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-mod-3">
+
+        </div>
+        <div class="col-md-6 main">
+            <form action="/products" method="POST">
+                <h2>Lesessionregistrierung</h2>
+                <!--In diesem Formular können Daten erfasst aber auch abgerufen werden-->
+                <h1>Lesehistorie</h1>
+                <!--default heutiges Datum-->
+                <input type="text" class="box"
+                       id="eindat" name="eindat" placeholder="Eingabedatum" required/>
+                <input type="text" class="box"
+                       id="entdat" name="entdat" placeholder="Entdeckungsdatum"/>
+                <input type="text" class="box"
+                       id="verdat" name="verdat" placeholder="Veröffentlichungsdatum" />
+                <input type="text" class="box"
+                       id="enddat" name="enddat" placeholder="Beendigungsdatum"/>
+                <br>
+                <!--Autocomplete mit Abkürzungserklärung-->
+                <h1>Basisdaten</h1>
+                <input type="text" class="box" id="author"
+                       id="autor" placeholder="Autor" required/>
+
+                <input type="text" class="box"
+                       id="keyword" name="keyword" placeholder="Keyword" required/>
+                <!--dropdown bis 15 default 0-->
+                <input type="text" class="box"
+                       id="kwp" name="kwp" placeholder="Position" required/>
+                <!--default bertelsmann-->
+                <input type="text" class="box"
+                       id="verlag" name="verlag" placeholder="Verlag" required/>
+                <input type="text" class="box"
+                       id="seiten" name="seiten" placeholder="Seiten" required/>
+                <br>
+                <h1>Angaben zum Inhalt</h1>
+                <p>
+                    <input type="text" class="box"
+                           id="genre" name="genre" placeholder="Genre"/>
+                    <input type="text" class="box"
+                           id="gengenau" name="gengenau" placeholder="Genaues Genre"/>
+                    <!--Dropdown -->
+                    <input type="text" class="box"
+                           id="kontinent" name="kontinent" placeholder="Kontinent"/>
+                    <!--Dropdown-->
+                    <input type="text" class="box"
+                           id="land" name="land" placeholder="Land"/>
+
+                    <br>
+                    <input type="text" class="box"
+                           id="thema" name="thema" placeholder="Thema"/>
+                    <input type="text" class="box"
+                           id="thema1" name="thema1" placeholder="Thema1"/>
+                    <input type="text" class="box"
+                           id="thema2" name="thema2" placeholder="Thema2"/>
+                    <!--Dropdown Phasen-->
+                    <input type="text" class="box"
+                           id="zeit" name="zeit" placeholder="Zeit"/>
+                    <!--Amazon Link-->
+                    <input type="text" class="box"
+                           id="amalin" name="amalin" placeholder="Amazon Link"/>
+
+                <h1>Angaben zur Markierung</h1>
+
+                <br>
+                <!-- wo ist die Markierung default unten checkbox-->
+                <input type="text" class="box"
+                       id="position" name="position" placeholder="Position"/>
+
+                <!-- Markierung Farbe und Ausprägung 3 Bereiche mit bis zu 5 Strichen
+                Validierung wenn Kombination schon vorhanden und Alternativvorschlag-->
+                <input type="text" class="box"
+                       id="mark" name="mark" placeholder="Markierung"/>
+                <!-- Beste Markierung nur mit 1 Strich bzw aufsteigend mehrere bzw. nur ein Bereich.-->
+                <input type="text" class="box"
+                       id="markrang" name="markrang" placeholder="Rang der Markierung"/>
+                <!-- Der Topwert einer Markierung z.B. 1 bis max. 111-->
+                <input type="text" class="box"
+                       id="topw" name="topw" placeholder="Topwert"/>
+                <!-- Belegte Bereiche optimal nur einer-->
+                <input type="text" class="box"
+                       id="belber" name="belber" placeholder="belegter Bereich"/>
+                <!-- Gesamtwert aller Striche max. 15-->
+                <input type="text" class="box"
+                       id="gesw" name="gesw" placeholder="Gesamtwert"/>
+                <!-- Zustand der Markierung x = Markierung verfügbar v = kann aussortiert werden w = Wunschbuch-->
+                <input type="text" class="box"
+                       id="zustand" name="zustand" placeholder="Zustand"/>
+
+                <input type="submit" value="Submit" id="submit"/>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
